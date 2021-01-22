@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background img {
+  position: absolute;
+  height: 100vh;
+  left: -12%;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+}
+
+nav {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  position: absolute;
+  right: -20px;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li {
+  list-style: none;
+  margin: 0 20px;
+  padding-bottom: 5px;
+  transition: border 0.3s ease;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu ul li a:after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.menu ul li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.heading {
+  position: absolute;
+  left: 10%;
+  bottom: 20%;
+  padding: 30px 30px;
+  width: 650px;
+  border: 2px solid white;
+}
+
+.heading h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: 300;
+  margin: 0;
+  padding-top: 10px;
+  line-height: 1.1;
+}
+
+.second-page {
+  position: relative;
+  top: 150px;
+  width: 80%;
+  display: flex;
+}
+
+.second-page .content {
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 500px;
+  padding: 50px;
+}
+
+.second-page .content h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.second-page .content p {
+  margin: 0;
+  margin-top: 30px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: rgb(87, 87, 87);
+}
+
+.third-page {
+  position: relative;
+  top: 300px;
+  width: 80%;
+}
+
+.third-page .header {
+  display: flex;
+  align-items: center;
+}
+
+.third-page .header h1 {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.third-page .header .btn {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  color: black;
+  padding: 15px 50px;
+  border: 2px solid black;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.third-page .header .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.third-page .body {
+  padding: 0;
+  margin-top: 80px;
+  position: absolute;
+  left: -5px;
+  width: 101%;
+}
+
+.third-page .body img {
+  margin: 5px;
+  width: 277px;
+  filter: brightness(60%);
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+
+.third-page .body img:hover {
+  opacity: 0.4;
+}
+
+.third-page .body img:hover + h3 {
+  color: #333;
+}
+
+.third-page .body h3 {
+  display: inline;
+  color: white;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.deep-earth {
+  position: absolute;
+  left: 40px;
+  top: 350px;
+  width: 200px;
+}
+
+.night-arcade {
+  position: absolute;
+  left: 332px;
+  top: 350px;
+  width: 200px;
+}
+
+.soccer-team {
+  position: absolute;
+  left: 624px;
+  top: 350px;
+  width: 200px;
+}
+
+.grid {
+  position: absolute;
+  left: 916px;
+  top: 350px;
+  width: 160px;
+}
+
+.from-above {
+  position: absolute;
+  left: 40px;
+  top: 847px;
+  width: 200px;
+}
+
+.pocket-borealis {
+  position: absolute;
+  left: 332px;
+  top: 847px;
+  width: 200px;
+}
+
+.curiosity {
+  position: absolute;
+  left: 624px;
+  top: 847px;
+  width: 200px;
+}
+
+.fisheye {
+  position: absolute;
+  left: 916px;
+  top: 847px;
+  width: 200px;
+}
+
+.footer {
+  background-color: black;
+  position: relative;
+  top: 1600px;
+  width: 100vw;
+  height: 200px;
+}
+
+.footer .logo {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.footer .nav-bottom {
+  position: absolute;
+  top: 55%;
+  left: 5.8%;
+}
+
+.footer .nav-bottom ul {
+  display: flex;
+}
+
+.footer .nav-bottom ul li {
+  list-style: none;
+  margin: 0 20px;
+  padding-bottom: 5px;
+  transition: border 0.3s ease;
+}
+
+.footer .nav-bottom ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  position: relative;
+}
+
+.footer .nav-bottom ul li a:after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.footer .nav-bottom ul li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.social-links {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-size: 34px;
+  color: white;
+  margin: 5px;
+}
+
+.social-links a i {
+  position: relative;
+}
+
+.social-links a i:after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.social-links a i:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.footer p {
+  position: absolute;
+  top: 55%;
+  right: 10%;
+  color: grey;
+}
